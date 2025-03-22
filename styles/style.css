@@ -16,7 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -102,13 +102,11 @@ ol {
   cursor: pointer;
   align-items: center;
   gap: 5px;
-  
 }
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
-  
 }
 .search-form__label:active {
   outline: none;
@@ -137,7 +135,6 @@ ol {
   appearance: none;
   font-weight: 400;
   font-size: 18px;
-  
 }
 
 .search-form__textfield:focus {
@@ -186,18 +183,17 @@ ol {
   line-height: 96%;
   text-transform: uppercase;
   color: #fff;
-    
 }
 
 .content__accent {
   color: #545050;
-  
 }
 
 .content__list-container {
   overflow-y: auto;
   overflow-x: hidden;
   flex-grow: 1;
+  position: relative;
 }
 
 .content__list-item:last-of-type {
@@ -214,8 +210,6 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  
-  
 }
 
 .content__video-card-thumbnail {
@@ -223,15 +217,14 @@ ol {
   max-height: 114px;
   object-fit: cover;
   object-position: center;
-  
-  
 }
 
 .content__video-card-description-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap:6px;
+  gap: 6px;
+  overflow: hidden;
 }
 
 .content__card-link {
@@ -251,6 +244,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
+  cursor: pointer
 }
 
 .content__card-link:focus {
@@ -267,7 +261,8 @@ ol {
   font-style: normal;
   text-transform: uppercase;
   line-height: 1;
-  
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -288,12 +283,9 @@ ol {
   background-color: transparent;
   cursor: pointer;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: #fff;
-  
-  
-  
 }
 
 .button:hover {
@@ -314,5 +306,4 @@ ol {
 
 .more-button {
   inline-size: 100%;
- 
 }
